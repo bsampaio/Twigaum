@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	{% block title %}Página do projeto{% endblock %}
+	</title>
+	{% block styles %}
+	    
+	{% endblock %}
+</head>
+<body>
+<div id="content">
+	{% include '_includes/header.twig' with vars only %}
+	{% block content %}
+	    <h1>Página base</h1>
+	{% endblock %}
+</div>
+{% block scripts %}
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+{% endblock %}
+</body>
+</html>

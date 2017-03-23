@@ -1,0 +1,17 @@
+{% extends 'hello-world.twig' %}
+
+{% block content %}
+    
+    <h3>Hello world 2</h3>
+    {{ parent() }}
+{% endblock %}
+
+{% block title %}
+    Página de hello world
+{% endblock %}
+
+{% block scripts %}
+	{{ parent () }}
+    <script type="text/javascript">alert('Opa')</script>
+	
+{% endblock %}

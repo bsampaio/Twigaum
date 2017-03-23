@@ -1,0 +1,23 @@
+{
+    "name": "ios/twig",
+    "description": "Aprendendo a usar melhor o twig",
+    "require": {
+        "twig/twig": "^1.5",
+        "league/route": "^3.0",
+        "zendframework/zend-diactoros": "^1.3"
+    },
+    "authors": [
+        {
+            "name": "breno",
+            "email": "breno@backstagedigital.com.br"
+        }
+    ],
+    "autoload" : {
+        "psr-0" : {
+            "App" : "./app",
+            "App\\Controller" : "./app/controller",
+            "App\\Model" : "./app/model",
+            "Library" : "./library/"
+        }
+    }
+}

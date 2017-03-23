@@ -1,0 +1,9 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+    {{ parent() }}
+    <h3>Página filha</h3>
+    {% block content2 %}
+        
+    {% endblock %}
+{% endblock %}
